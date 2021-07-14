@@ -20,9 +20,6 @@ import naman.shah.n01392496.R;
  */
 public class NamanFragment extends Fragment {
     private static final String TAG = "1";
-    int[] images = {R.drawable.cv,R.drawable.fn,R.drawable.wpl};
-    int i = 0;
-    ImageButton imageButton;
     private View v;
     private PageViewModel pageViewModel;
 
@@ -30,17 +27,18 @@ public class NamanFragment extends Fragment {
 
         return new NamanFragment();
     }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         pageViewModel = new ViewModelProvider(this).get(PageViewModel.class);
         pageViewModel.setIndex(TAG);
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         v = inflater.inflate(R.layout.fragment_naman, container, false);
         final TextView textView = v.findViewById(R.id.section_label);
-
         pageViewModel.getText().observe(getViewLifecycleOwner(),
                 new Observer<String>() {
                     @Override
@@ -48,28 +46,32 @@ public class NamanFragment extends Fragment {
                         textView.setText(s);
                     }
                 });
-        configureImageButton();
-
-        return v;
-    }
 
 
-    private void configureImageButton() {
-        // TODO Auto-generated method stub
-        ImageButton btn = (ImageButton) v.findViewById(R.id.imageButton);
+        final ImageButton btn = (ImageButton) v.findViewById(R.id.imageButton);
 
         btn.setOnClickListener(new View.OnClickListener() {
+            int count = 0;
 
             @Override
             public void onClick(View v) {
-                imageButton.setImageResource(images[i]);
-                i++;
-                if(i==3)
-                    i=0;
+                if (count > 2) {
+                    count = 0;
+
+                }
+                if (count == 0){
+                    btn.setImageResource(R.drawable.fn);
+                }
+                if (count == 1) {
+                    btn.setImageResource(R.drawable.three);
+                }
+                if (count == 2){
+                    btn.setImageResource(R.drawable.one);
+                }
+                 count++;
             }
         });
-
-
-    }
-
+    return v;}
 }
+
+

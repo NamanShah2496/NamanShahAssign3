@@ -37,9 +37,9 @@ import naman.shah.n01392496.R;
             case 1:
                 return new ShahFragment();
             case 2:
-                //return new
+                return new N01392496Fragment();
             case 3:
-                //return new
+                return new NSFragment();
             default:
                 return null;
 

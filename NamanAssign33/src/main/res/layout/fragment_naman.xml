@@ -5,7 +5,8 @@
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.NamanFragment">
+    tools:context=".ui.main.NamanFragment"
+    android:background="@color/lightyellow">
 
     <TextView
         android:id="@+id/section_label"
@@ -25,9 +26,9 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="325dp"
-        android:layout_height="145dp"
-        android:src="@drawable/cv"
+        android:layout_width="224dp"
+        android:layout_height="268dp"
+        android:src="@drawable/one"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,7 +39,7 @@
         android:id="@+id/Namandate"
         android:layout_width="120dp"
         android:layout_height="41dp"
-        android:text="Select Date"
+        android:text="@string/select_date"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -20,7 +20,7 @@ import naman.shah.n01392496.R;
  * create an instance of this fragment.
  */
 public class ShahFragment extends Fragment {
-    private static final String TAG = "2";
+    private static final String TAG ="2";
     private PageViewModel pageViewModel;
     private View v;
 
@@ -46,7 +46,7 @@ public class ShahFragment extends Fragment {
                     @Override
                     public void onChanged(@Nullable String s) {
                         textView.setText(s);
-                        textView.setText("Naman Shah, N01392496");
+                       // textView.setText("Naman Shah, N01392496");
                     }
                 });
         // Inflate the layout for this fragment
