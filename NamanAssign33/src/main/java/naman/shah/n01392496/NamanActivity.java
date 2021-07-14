@@ -12,34 +12,43 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import naman.shah.n01392496.ui.main.SectionsPagerAdapter;
 import naman.shah.n01392496.databinding.ActivityMainBinding;
 
 public class NamanActivity extends AppCompatActivity {
-
-    private ActivityMainBinding binding;
-
+private TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
-
+        setContentView(R.layout.activity_main);
+        ViewPager viewPager= (ViewPager) findViewById(R.id.Namanview_pager);
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
-        ViewPager viewPager = binding.NamanviewPager;
         viewPager.setAdapter(sectionsPagerAdapter);
-        TabLayout tabs = binding.Namantabs;
+        textView = findViewById(R.id.section_label);
+        TabLayout tabs = findViewById(R.id.Namantabs);
         tabs.setupWithViewPager(viewPager);
-        FloatingActionButton fab = binding.fab;
 
-        fab.setOnClickListener(new View.OnClickListener() {
+        tabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onTabSelected(TabLayout.Tab tab) {
+                int position = tab.getPosition();
+
+                Toast.makeText(getApplicationContext(), "Tab selected is " +
+                        position, Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
             }
         });
+
     }
+
 }
