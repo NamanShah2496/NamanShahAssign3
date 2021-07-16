@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="size">
+        <item>@string/_1</item>
+        <item>@string/_2</item>
+        <item>@string/_3</item>
+        <item>@string/_4</item>
+    </string-array>
+    <string-array name="color">
+        <item>Blue</item>
+        <item>Black</item>
+        <item>Gray</item>
+        <item>Red</item>
+    </string-array>
+</resources>
