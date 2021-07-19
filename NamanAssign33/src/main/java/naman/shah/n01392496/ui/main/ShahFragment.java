@@ -1,3 +1,4 @@
+// Naman Shah, N01392496, RNA
 package naman.shah.n01392496.ui.main;
 
 import android.os.Bundle;
@@ -17,11 +18,6 @@ import android.widget.TextView;
 import naman.shah.n01392496.CanvasView;
 import naman.shah.n01392496.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ShahFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class ShahFragment extends Fragment {
     private static final String TAG ="2";
     private PageViewModel pageViewModel;
@@ -40,7 +36,6 @@ public class ShahFragment extends Fragment {
     public void updatePen(View v){
         String penSize = (String)((TextView)size.getSelectedView()).getText();
         String penColor = (String)((TextView)color.getSelectedView()).getText();
-        penColor.toUpperCase();
         customCanvas.updateCanvas(penSize,penColor);
     }
     @Override

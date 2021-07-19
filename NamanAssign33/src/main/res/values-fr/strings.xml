@@ -22,4 +22,8 @@
     <string name="name_id">Naman Shah, N01392496</string>
     <string name="clear">Clear</string>
     <string name="update">Update</string>
+    <string name="fname_rotate">Naman</string>
+    <string name="lname_rotate">Shah</string>
+    <string name="toggle_on">Toggle ON</string>
+    <string name="toggle_off">Toggle OFF</string>
 </resources>
