@@ -27,4 +27,9 @@
     <string name="lname_rotate">Shah</string>
     <string name="toggle_on">Toggle ON</string>
     <string name="toggle_off">Toggle OFF</string>
+    <string name="deny">Permission Denied</string>
+    <string name="allow">Permission Granted</string>
+    <string name="number">+1 437-235-6780</string>
+    <string name="tel">tel:</string>
+    <string name="button">Button</string>
 </resources>
