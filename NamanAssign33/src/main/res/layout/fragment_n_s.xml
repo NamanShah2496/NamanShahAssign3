@@ -12,15 +12,28 @@
     <!-- TODO: Update blank fragment layout -->
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/namanbutton1"
         android:layout_width="406dp"
         android:layout_height="64dp"
         android:text="@string/button"
+        android:textSize="@dimen/button_size"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
+
+    <ImageView
+        android:id="@+id/namanimageView1"
+        android:layout_width="205dp"
+        android:layout_height="225dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461"
+        app:srcCompat="@drawable/gradient" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

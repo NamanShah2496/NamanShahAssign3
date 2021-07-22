@@ -44,7 +44,7 @@ private View v;
                              Bundle savedInstanceState) {
          v = inflater.inflate(R.layout.fragment_n_s, container, false);
         // Inflate the layout for this fragment
-        final Button button = v.findViewById(R.id.button);
+        final Button button = v.findViewById(R.id.namanbutton1);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

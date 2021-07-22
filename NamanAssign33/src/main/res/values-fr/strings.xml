@@ -10,9 +10,9 @@
     <string name="_2">2</string>
     <string name="_3">3</string>
     <string name="_4">4</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="tab2_defaulttxt">TextView</string>
     <string name="select_date">Select Date</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="exit_dialouge">Do you want to exit the app</string>
     <string name="exit_yes">Yes</string>
     <string name="exit_no">No</string>
@@ -28,7 +28,8 @@
     <string name="toggle_off">Toggle OFF</string>
     <string name="deny">Permission Denied</string>
     <string name="allow">Permission Granted</string>
-    <string name="number">+1 437-235-6780</string>
+    <string name="number">+1 437–235-6780</string>
     <string name="tel">tel:</string>
     <string name="button">Button</string>
+    <string name="swch">Switch</string>
 </resources>

@@ -7,4 +7,6 @@
     <color name="lightblue">#E0FFFF</color>
     <color name="lightpurple">#E6E6FA</color>
     <color name="lightyellow">#FFFFE0</color>
+    <color name="startColor">#FFFF00</color>
+    <color name="endColor">#FF0000</color>
 </resources>

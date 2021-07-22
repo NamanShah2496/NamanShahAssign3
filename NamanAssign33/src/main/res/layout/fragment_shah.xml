@@ -8,11 +8,6 @@
     android:background="#98FB98">
 
     <!-- TODO: Update blank fragment layout -->
-    <naman.shah.n01392496.CanvasView
-        android:id="@+id/signature_canvas"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textColor="#FFFFFF"/>
 
 
     <ImageView
@@ -25,6 +20,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.241"
         app:srcCompat="@drawable/mb" />
+
+    <naman.shah.n01392496.CanvasView
+        android:id="@+id/signature_canvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"/>
 
     <Button
         android:id="@+id/namanclearbutton"
