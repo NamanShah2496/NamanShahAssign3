@@ -63,11 +63,12 @@ return v;
                     REQUEST_PHONE_CALL);
         }
     }
+    @Override
     public void onRequestPermissionsResult(int requestCode, @NotNull String[] permissions, @NotNull int[] grantResults) {
         if (requestCode == REQUEST_PHONE_CALL && grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
             Toast.makeText(getContext(), getResources().getString(R.string.allow), Toast.LENGTH_SHORT).show();
         }
-        else{
+        else if(requestCode != REQUEST_PHONE_CALL && grantResults.length > 0 && grantResults[0] != PackageManager.PERMISSION_GRANTED){
             ConstraintLayout text = (ConstraintLayout) v.findViewById(R.id.constraintLayout);
             Snackbar snackbar = Snackbar
                     .make(text, R.string.deny, Snackbar.LENGTH_LONG);
